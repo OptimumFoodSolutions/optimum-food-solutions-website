@@ -1,0 +1,15 @@
+# OS-genererede filer
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editor- / IDE-filer
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logfiler
+*.log
