@@ -136,8 +136,11 @@ img { max-width: 100%; display: block; }
 .hero-stat-num { display: block; font-family: var(--font-head); font-weight: 800; font-size: 2.2rem; color: var(--green-900); letter-spacing: -.02em; }
 .hero-stat-label { color: var(--muted); font-size: .95rem; }
 .hero-partners-label { font-family: var(--font-head); font-weight: 600; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 0 0 12px; }
-.hero-partners { list-style: none; display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; }
+.hero-partners { list-style: none; display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; }
 .hero-partners li { background: var(--green-50); border-radius: var(--radius-sm); padding: 14px 10px; text-align: center; }
+.hero-partner-logo { display: block; box-sizing: border-box; height: 34px; width: 110px; max-width: 100%; margin: 0 auto 8px; padding: 2px 0; object-fit: contain; }
+.hero-partner-logo--bki { padding: 5px 0; }
+.hero-partner-logo--mediq { padding: 0; }
 .hero-partners strong { display: block; font-family: var(--font-head); color: var(--green-900); font-size: 1.02rem; }
 .hero-partners span { font-size: .78rem; color: var(--muted); }
 
@@ -159,6 +162,7 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Cards ---------- */
 .cards-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+.cards-4 { grid-template-columns: repeat(4,1fr); gap: 20px; }
 .card {
   background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
   padding: 28px; box-shadow: var(--shadow);
@@ -177,6 +181,7 @@ img { max-width: 100%; display: block; }
 .partner-logo img { max-height: 56px; max-width: 180px; width: auto; height: auto; object-fit: contain; }
 .partner-logo img.logo-dagrofa { max-height: 64px; }
 .partner-logo img.logo-bki { max-height: 46px; max-width: 140px; }
+.partner-logo img.logo-mediq { max-height: 60px; max-width: 170px; }
 
 .card-num { text-align: left; }
 .card-num-big { display: block; font-family: var(--font-head); font-weight: 800; font-size: 2.8rem; color: var(--green-500); line-height: 1; margin-bottom: 10px; }
@@ -310,6 +315,7 @@ img { max-width: 100%; display: block; }
   .hero-card { order: -1; }
   .stats-grid { grid-template-columns: repeat(2,1fr); gap: 28px 16px; }
   .cards-3 { grid-template-columns: 1fr; }
+  .cards-4 { grid-template-columns: repeat(2,1fr); }
   .services-grid .card { flex-basis: calc(50% - 12px); }
   .cards-team .card { flex-basis: calc(50% - 12px); }
   .footer-inner { grid-template-columns: 1fr; gap: 28px; }
@@ -329,6 +335,7 @@ img { max-width: 100%; display: block; }
 }
 
 @media (max-width: 720px) {
+  .cards-4 { grid-template-columns: 1fr; }
   .services-grid .card { flex-basis: 100%; }
   .cards-team .card { flex-basis: 100%; }
 }
